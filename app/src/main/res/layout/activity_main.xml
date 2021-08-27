@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:id="@+id/rel">
+    <Toolbar android:layout_width="match_parent" android:layout_height="wrap_content"
+             android:padding="4dp"
+             android:background="@color/purple_500"
+             android:titleTextColor="@color/white"
+             android:title="@string/app_name" android:id="@+id/tb"/>
+    <TextView
+            android:text="@string/quotes1"
+            android:textSize="100sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp" android:id="@+id/textView" android:layout_below="@id/tb"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+android:layout_below="@id/textView"
+android:id="@+id/quote"
+          android:text="@string/lorem_ipsum"
+          android:layout_marginTop="5dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:textSize="20sp"
+
+android:layout_centerHorizontal="true"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:layout_below="@id/quote"
+              android:id="@+id/author"
+              android:text="@string/unknown"
+              android:layout_marginTop="10dp"
+              android:layout_marginStart="10dp"
+              android:layout_marginEnd="10dp"
+              android:textAlignment="viewEnd"
+              android:textSize="25sp"
+   />
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_below="@id/author"
+            android:width="130dp"
+            android:background="@drawable/button_drawable"
+            android:text="@string/previous"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:elevation="10dp"
+    android:id="@+id/wb"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_below="@id/author"
+            android:layout_toEndOf="@id/wb"
+            android:width="130dp"
+            android:background="@drawable/button_drawable1"
+            android:text="@string/next"
+            android:textColor="@color/purple_500"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:elevation="10dp"
+    android:id="@+id/wb1"/>
+
+    <TextView
+            android:text="@string/quotes2"
+            android:textSize="100sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_below="@id/wb"/>
+
+    <FrameLayout android:id="@+id/action_button"
+            android:background="@drawable/action_button"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+    android:minWidth="80dp"
+    android:minHeight="80dp"
+                 android:elevation="15dp"
+    android:layout_marginEnd="7dp"
+    android:layout_marginBottom="5dp">
+      <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal|center_vertical"
+      android:src="@android:drawable/ic_menu_share"
+      android:contentDescription="@string/share_quote"/>
+    </FrameLayout>
+</RelativeLayout>
